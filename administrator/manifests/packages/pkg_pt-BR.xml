@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="package" version="3.0">
+	<name>Pacote de Idiomas em Português Brasileiro</name>
+	<packagename>pt-BR</packagename>
+	<version>3.3.6</version>
+	<url>http://joomlacode.org/gf/project/joomlabr/</url>
+	<packager>Projeto Joomla! pt-BR</packager>
+	<packagerUrl>http://joomlacode.org/gf/project/joomlabr/</packagerUrl>
+    <description><![CDATA[Arquivos de Idioma em Português Brasileiro para Joomla! 3.0<br/>
+				 Copyrights: (C) 2005 - 2014 Open Source Matters. All rights reserved.<br/>
+				 Copyrights: (C) 2005 - 2014 Projeto Joomla! pt-BR.<br/>				 
+				 Todos os direitos reservados.<br/>
+				 Projeto Joomla! pt-BR - http://joomlacode.org/gf/project/joomlabr/<br/>]]>
+	</description>
+
+	<files>
+		<file type="language" client="site" id="pt-BR">site_pt-BR.zip</file>
+		<file type="language" client="admin" id="pt-BR">admin_pt-BR.zip</file>
+	</files>
+</extension> 
