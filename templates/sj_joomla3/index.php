@@ -73,7 +73,7 @@ $dir = ($ytrtl == 'rtl') ? ' dir="rtl"' : '';
 					?>
 						<div class="yt-main">
 							<div class="yt-main-in1 container">
-								<div class="yt-main-in2 row">
+								<div class="yt-main-in2 row"> 
         							<?php
 									$countL = $countR = $countM = 0;
 									// BEGIN: foreach position of block content
@@ -97,7 +97,8 @@ $dir = ($ytrtl == 'rtl') ? ' dir="rtl"' : '';
 					?>
 						<div class="yt-main">
 							<div class="yt-main-in1 container">
-								<div class="yt-main-in2 row">
+								<div class="yt-main-in2 row">	
+
 								<?php		
 								if( !empty($tagBD["hasGroup"]) && $tagBD["hasGroup"] == "1"){
 									// BEGIN: For Group attribute
@@ -148,8 +149,13 @@ $dir = ($ytrtl == 'rtl') ? ' dir="rtl"' : '';
 									}
 									// END: for Tags without group attribute
 								}
-								?>
+								?>								
+
 								</div>
+									<div class="span6">									    	
+									   <img src="/mam_site/templates/sj_joomla3//images/mobileicon.png" alt="Telefones de Contato" width="5%" />
+									   <span style="font-size:130%; font-weight: bold;">(31) 8569-5270 / (31) 3426-2625</span> 
+									</div>
 							</div>
 						</div>
                     <?php

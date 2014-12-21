@@ -194,14 +194,36 @@ if ($captchatype == 1){
                 <?php } ?>
 			</div>
 		</div>
+
+		<!-- Removido por Tiago - 15/12/2014
 		<div class="control-group">
 			<div class="control-label">
-				<label for="subject" class="hasTip required"><?php echo htmlspecialchars(JText::_('COM_ALFCONTACT_FORM_SUBJECT')); ?></label>
+				<label for="subject" class="hasTip required"> echo htmlspecialchars(JText::_('COM_ALFCONTACT_FORM_SUBJECT')); ?></label>
 			</div>
 			<div class="controls">
-				<input class="required" name="subject" id="subject" type="text" value="<?php echo htmlspecialchars(isset($this->subject) ? $this->subject : ''); ?>"/>
+				<input class="required" name="subject" id="subject" type="text" value="echo htmlspecialchars(isset($this->subject) ? $this->subject : ''); ?>"/>
 			</div>
-		</div>	
+		</div>
+		-->
+
+		<!-- Add por Tiago - 14/12/2014 -->
+		<div class="control-group">
+			<div class="control-label">
+				<label for="subject2" class="hasTip required"><?php echo htmlspecialchars(JText::_('COM_ALFCONTACT_FORM_SUBJECT')); ?></label>
+			</div>
+			<div class="controls">
+				<select name="subject" id="subject">	
+					<option value="" selected="selected"><?php echo htmlspecialchars("Selecione"); ?></option>
+					<option value="Orçamento Viagem"><?php echo htmlspecialchars("Orçamento para viagem"); ?></option>
+					<option value="Orçamento Evento"><?php echo htmlspecialchars("Orçamento para evento"); ?></option>
+					<option value="Frete Universitario"><?php echo htmlspecialchars("Informaçoes para frete universitario"); ?></option>
+					<option value="Informaçoes"><?php echo htmlspecialchars("Outros"); ?></option>
+				
+				</select>
+			</div>
+		</div>
+
+
 		<div class="control-group startfields">
 			<div class="control-label">
 				<label for="contact-form-message" class="hasTip required"><?php echo htmlspecialchars(JText::_('COM_ALFCONTACT_FORM_MESSAGE')); ?></label>
